@@ -6,3 +6,6 @@ test:
     password: <%= ENV['WERCKER_MYSQL_PASSWORD'] %>
     host: <%= ENV['WERCKER_MYSQL_HOST'] %>
     port: <%= ENV['WERCKER_MYSQL_PORT'] %>
+
+production:
+  <<: *test
